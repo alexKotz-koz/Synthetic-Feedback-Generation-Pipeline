@@ -52,12 +52,16 @@ def _build_llm(model_str: str) -> Any:
         return RuntimeChatOpenAI(
             model=model_str, reasoning_effort="medium", api_key=api_key
         )
+    elif "gpt-4" in model_str:
+        return RuntimeChatOpenAI(model=model_str, temperature=0.7, api_key=api_key)
+    else:
+        return RuntimeChatOpenAI(model=model_str, api_key=api_key)
 
 
 def generate_personas(total_personas: int = 10, model_str: str = ""):
 
     llm = _build_llm(model_str=model_str)
-    personas = list[ClinicianPersona] = []
+    personas: list[ClinicianPersona] = []
     ###SDG Controllers
     sdg_controllers = _static._build_feedback_label_pairs(total_personas)
 
@@ -66,27 +70,33 @@ def generate_personas(total_personas: int = 10, model_str: str = ""):
 
         # 1) Sociodemographic A
         race = _static._find_race(seed=random.randint(0, 9))
+        print(f"\tRace: {race}")
         age = _static._find_age(seed=random.randint(0, 3))
+        print(f"\tAge: {age}")
         sex = _static._find_sex(seed=random.randint(0, 1))
+        print(f"\tSex: {sex}")
         support_system = _static._find_support_system(n=random.randint(2, 8))
-
+        print(f"\tSupport System: {support_system}")
         # 2) SDG
         contextual_relevance, vagueness_ambiguity = sdg_controllers[i]
-
+        print(f"\tSDG CR: {contextual_relevance} | VA: {vagueness_ambiguity}")
         # 3) Occupation A
         current_occupation_title = _static._find_current_occupation_title(age=age)
+        print(f"\tCurrent Occupation: {current_occupation_title}")
         annual_income = _static._find_annual_income(
             current_occupation_title=current_occupation_title,
             income_seed=random.randint(0, 100_000),
         )
+        print(f"\tIncome: {annual_income}")
         years_of_experience = _static._find_years_of_experience(
             age=age, current_occupation_title=current_occupation_title
         )
-
+        print(f"\tYears of Experience: {years_of_experience}")
         # 4) Clinical
         clinical_priorities = _static._find_clinical_priorities(n=5)
+        print(f"\tClinical Priorities: {clinical_priorities}")
         personality_traits = _static._find_personality(current_occupation_title)
-
+        print(f"\tPersonality: {personality_traits}")
         # 6) Sociodemographic B
         place_of_birth = _normalize_single_line(
             _invoke_llm_text(
@@ -96,6 +106,7 @@ def generate_personas(total_personas: int = 10, model_str: str = ""):
                 ),
             )
         )
+        print(f"\tPlace of Birth: {place_of_birth}")
         # 7) Occupation B
         organization_location = _normalize_single_line(
             _invoke_llm_text(
@@ -105,11 +116,13 @@ def generate_personas(total_personas: int = 10, model_str: str = ""):
                 ),
             )
         )
+        print(f"\tOrganization Location: {organization_location}")
         organization_affiliation = _normalize_single_line(
             _invoke_llm_text(
                 llm, _dynamic._generate_organizational_affiliation_prompt()
             )
         )
+        print(f"\tOrganization Name: {organization_affiliation}")
         # 8) Sociodemographic C
         hobby_count = random.randint(3, 5)
         hobbies = _parse_list_response(
@@ -130,6 +143,7 @@ def generate_personas(total_personas: int = 10, model_str: str = ""):
             expected_count=hobby_count,
         )
         hobbies = ", ".join(hobbies)
+        print(f"\tHobbies Generated with {len(hobbies)} characters.")
 
         # 9) Technology
         technological_skill_level = _invoke_llm_text(
@@ -143,6 +157,9 @@ def generate_personas(total_personas: int = 10, model_str: str = ""):
                 clinical_priorities=clinical_priorities,
                 lifestyle_characteristics_hobbies=hobbies,
             ),
+        )
+        print(
+            f"\tTech Skill Generated with {len(technological_skill_level)} characters."
         )
 
         # 10) Build full persona before full_name
@@ -170,7 +187,9 @@ def generate_personas(total_personas: int = 10, model_str: str = ""):
         persona.full_name = _normalize_single_line(
             _invoke_llm_text(llm, _dynamic._generate_full_name_prompt(persona))
         )
+        print(f"\tFull Name: {persona.full_name}")
         personas.append(persona)
+    return personas
 
 
 if __name__ == "__main__":

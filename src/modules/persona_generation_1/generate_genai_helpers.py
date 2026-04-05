@@ -11,7 +11,6 @@ def _generate_location_prompt(seed: int) -> str:
 
 
 def _generate_organizational_affiliation_prompt() -> str:
-    print("...Organizational Affiliation")
     return """
 Generate a realistic name for a healthcare organization in the family medicine or primary care specialties.
 
@@ -46,7 +45,6 @@ def _generate_lifestyle_characteristics_hobbies_prompt(
     support_system: list[str],
     n: int,
 ) -> str:
-    print("...Lifestyle & Hobbies")
     if n < 1:
         raise ValueError("n must be at least 1")
 
@@ -112,7 +110,6 @@ def _generate_technological_skill_level_prompt(
     clinical_priorities: list[str],
     lifestyle_characteristics_hobbies: str,
 ) -> str:
-    print("...Tech Skill Level")
     priorities = ", ".join(clinical_priorities)
     return f"""
 Generate a realistic 3 to 4 sentence narrative describing how a fictional clinician actually interacts with technology in daily work and personal life.
@@ -151,7 +148,6 @@ Constraints:
 
 
 def _generate_full_name_prompt(existing_persona: ClinicianPersona) -> str:
-    print("...Full Name")
     return f"""
 Generate a realistic full name for a fictional clinician persona.
 
@@ -161,7 +157,7 @@ Persona characteristics:
 - race_ethnicity: {existing_persona.race_ethnicity}
 - place_of_birth: {existing_persona.place_of_birth}
 - current_occupation_title: {existing_persona.current_occupation_title}
-- organization_location: {existing_persona.organization_location}
+- organization_location: {existing_persona.current_organization_location}
 - personality_traits: {existing_persona.personality_traits}
 
 Requirements:

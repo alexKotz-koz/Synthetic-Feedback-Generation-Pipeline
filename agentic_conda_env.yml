@@ -4,7 +4,7 @@ channels:
   - anaconda
   - conda-forge
 dependencies:
-  - python
+  - python=3.13
   - pandas
   - numpy
   - seaborn
@@ -21,6 +21,7 @@ dependencies:
   - pip:
     - langchain
     - langgraph
+    - langchain-chroma
     - langchain-core
     - langchain-community
     - langchain-openai

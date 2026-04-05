@@ -21,7 +21,7 @@ class ClinicianPersona(BaseModel):
     race_ethnicity: str  # add validation for NIH categories
     place_of_birth: str
     support_system: list[str]
-    lifestyle_narrative: str
+    # lifestyle_narrative: str
     hobbies_narrative: str
     annual_income: int
 
@@ -39,5 +39,5 @@ class ClinicianPersona(BaseModel):
     personality_traits: str
 
     ### SDG
-    va_modulator = str
-    cr_modulator = str
+    va_modulator: str
+    cr_modulator: str

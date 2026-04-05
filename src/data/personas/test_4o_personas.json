@@ -1,0 +1,66 @@
+[
+  {
+    "id": "23399bc9-6009-41d3-95a3-34b3c52f6ef3",
+    "full_name": "Kaleo Manuia",
+    "age": 72,
+    "sex": "male",
+    "race_ethnicity": "Native Hawaiian or Pacific Islander",
+    "place_of_birth": "Oakridge, Tennessee",
+    "support_system": [
+      "cousin_1",
+      "non-married partner_1",
+      "sister_1",
+      "grandmother_1",
+      "grandmother_2"
+    ],
+    "hobbies_narrative": "Volunteering at local community center, Weekly book club with friends, Gardening in backyard, Attending local theater performances, Evening walks along the harbor",
+    "annual_income": 103681,
+    "technological_skill_level": "At Meadowbrook Family Health Center, the 72-year-old registered nurse efficiently navigates routine EHR documentation, leveraging well-crafted templates to ensure detailed and empathetic patient records, though she occasionally finds herself reliant on younger colleagues to troubleshoot unexpected software glitches. Despite her caution with newer interfaces, her dedication to maximizing patient satisfaction is evident in her careful digital documentation and the way she integrates physical and behavioral health outcomes into her notes. Outside of work, she prefers the tactile nature of her gardening hobby over digital apps, but she uses a simple e-reader to keep up with her weekly book club, mirroring her work style of blending traditional approaches with selective technological aids. Her evening walks along the harbor serve as both a personal retreat and a reminder of the balance she maintains between embracing technology and valuing time-tested routines.",
+    "current_occupation_title": "Registered Nurse",
+    "years_of_experience": 7,
+    "current_organization_name": "Meadowbrook Family Health Center",
+    "current_organization_location": "Harborview, Massachusetts",
+    "clinical_priorities": [
+      "EHR documentation",
+      "improved clinical physical-behavioral outcomes",
+      "empathy",
+      "maximizing patient satisfaction",
+      "research"
+    ],
+    "personality_traits": "Agreeable, assertive, conscientious, and steady under pressure, with a strong practical orientation toward team-based care.",
+    "va_modulator": "vague/ambiguous",
+    "cr_modulator": "contextually_irrelevant"
+  },
+  {
+    "id": "50ade9ec-a864-4839-a61f-02cad64660f5",
+    "full_name": "Ethan Caldwell",
+    "age": 27,
+    "sex": "male",
+    "race_ethnicity": "White",
+    "place_of_birth": "Riverbend, Virginia",
+    "support_system": [
+      "grandmother_1",
+      "father_1",
+      "sister_1",
+      "work colleague_1",
+      "cousin_1"
+    ],
+    "hobbies_narrative": "Volunteering at local health fairs, Regular Sunday family brunches, Weekly trivia night with colleagues, Exploring Chesapeake Bay seafood spots, Evening jigsaw puzzles and tea",
+    "annual_income": 116445,
+    "technological_skill_level": "At Pine Valley Family Health Center, the 27-year-old registered nurse adeptly navigates the electronic health record system, efficiently using templates and shortcuts to streamline routine documentation and focus on nurturing patient-provider relationships. However, when faced with unexpected errors or new software updates, he sometimes hesitates, preferring the familiarity of established workflows and occasionally seeking assistance from tech-savvy colleagues. Outside of work, his cautious yet methodical approach to technology manifests in his personal life; he enjoys using apps to discover new Chesapeake Bay seafood spots but relies on traditional jigsaw puzzles and tea for evening relaxation. Despite occasional technical hiccups, his dedication to empathy and research shines through as he continually adapts to maximize revenue and reduce cognitive load while maintaining a compassionate touch.",
+    "current_occupation_title": "Registered Nurse",
+    "years_of_experience": 4,
+    "current_organization_name": "Pine Valley Family Health Center",
+    "current_organization_location": "Bayfield, Maryland",
+    "clinical_priorities": [
+      "improved patient-provider relationships",
+      "reduced cognitive load",
+      "maximizing revenue",
+      "empathy",
+      "research"
+    ],
+    "personality_traits": "Agreeable, assertive, conscientious, and steady under pressure, with a strong practical orientation toward team-based care.",
+    "va_modulator": "clear/detailed",
+    "cr_modulator": "contextually_relevant"
+  }
+]

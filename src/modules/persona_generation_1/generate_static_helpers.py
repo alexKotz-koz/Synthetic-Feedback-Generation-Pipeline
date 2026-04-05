@@ -13,23 +13,19 @@ from .static import (
 
 
 def _find_race(seed: int) -> str:
-    print("...Race")
     return RACE_ETHNICITY_CATEGORIES[seed % len(RACE_ETHNICITY_CATEGORIES)]
 
 
 def _find_age(seed: int) -> int:
-    print("...Age")
     age_categories = [(18, 29), (30, 49), (50, 64), (65, 75)]
     return random.randint(*age_categories[seed % len(age_categories)])
 
 
 def _find_sex(seed: int) -> str:
-    print("...Sex")
     return SEX_CATEGORIES[seed % len(SEX_CATEGORIES)]
 
 
 def _find_support_system(n: int) -> list[str]:
-    print("...Support System")
     selected_support = []
     counts: dict[str, int] = {}
     parent_total = 0
@@ -62,7 +58,6 @@ def _find_support_system(n: int) -> list[str]:
 
 
 def _find_current_occupation_title(age: int) -> str:
-    print("...Occupation Title")
     if age < 18:
         raise ValueError("age must be at least 18")
 
@@ -117,14 +112,12 @@ def _find_current_occupation_title(age: int) -> str:
 def _find_annual_income(
     current_occupation_title: str, income_seed: int | None = None
 ) -> int:
-    print("...Income")
     income_category = INCOME_BY_OCCUPATION[current_occupation_title]
     generator = random.Random(income_seed) if income_seed is not None else random
     return generator.randint(*income_category["range"])
 
 
 def _find_years_of_experience(age: int, current_occupation_title: str) -> int:
-    print("...Years of Experience")
     if age < 18:
         raise ValueError("age must be at least 18")
 
@@ -168,7 +161,6 @@ def _find_years_of_experience(age: int, current_occupation_title: str) -> int:
 
 
 def _find_clinical_priorities(n: int = 5) -> list[str]:
-    print("...Clinicial Priorities")
     return random.sample(CLINICAL_PRIORITIES, k=min(n, len(CLINICAL_PRIORITIES)))
 
 
