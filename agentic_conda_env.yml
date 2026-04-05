@@ -1,0 +1,30 @@
+name: sfgd
+channels:
+  - defaults
+  - anaconda
+  - conda-forge
+dependencies:
+  - python
+  - pandas
+  - numpy
+  - seaborn
+  - matplotlib
+  - psutil
+  - xlsxwriter
+  - scikit-learn
+  - pytorch
+  - torchvision
+  - tensorboard
+  - transformers
+  - pydantic
+  - pip
+  - pip:
+    - langchain
+    - langgraph
+    - langchain-core
+    - langchain-community
+    - langchain-openai
+    - langchain-huggingface
+    - langchain_text_splitters
+    - pypdf
+    - dotenv
