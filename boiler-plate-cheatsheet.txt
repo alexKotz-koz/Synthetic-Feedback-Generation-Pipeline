@@ -1,6 +1,0 @@
-- conda env create -f environment.yml
-- tensorboard --logdir=runs
-- HuggingFace:
----- conda env config vars set HF_HOME=~/<path_to_project>/.cache
----- deactivate conda env
----- activate conda env
