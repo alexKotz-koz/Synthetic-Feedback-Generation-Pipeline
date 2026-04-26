@@ -1,66 +1,67 @@
 [
   {
-    "id": "23399bc9-6009-41d3-95a3-34b3c52f6ef3",
-    "full_name": "Kaleo Manuia",
-    "age": 72,
-    "sex": "male",
-    "race_ethnicity": "Native Hawaiian or Pacific Islander",
-    "place_of_birth": "Oakridge, Tennessee",
+    "id": "5e51754b-6e4e-46fc-a890-135817fd9863",
+    "full_name": "Layla Haddad",
+    "age": 49,
+    "sex": "female",
+    "race_ethnicity": "Middle Eastern or North African",
+    "place_of_birth": "Oakridge, Alabama",
     "support_system": [
-      "cousin_1",
-      "non-married partner_1",
-      "sister_1",
-      "friend_1",
-      "neighbor_1"
+      "uncle_1",
+      "grandfather_1",
+      "married partner_1"
     ],
-    "hobbies_narrative": "Volunteering at local community center, Weekly book club with friends, Gardening in backyard, Attending local theater performances, Evening walks along the harbor",
-    "annual_income": 103681,
-    "technological_skill_level": "At Meadowbrook Family Health Center, the 72-year-old registered nurse efficiently navigates routine EHR documentation, leveraging well-crafted templates to ensure detailed and empathetic patient records, though he occasionally finds himself reliant on younger colleagues to troubleshoot unexpected software glitches. Despite his caution with newer interfaces, his dedication to maximizing patient satisfaction is evident in his careful digital documentation and the way he integrates physical and behavioral health outcomes into his notes. Outside of work, he prefers the tactile nature of his gardening hobby over digital apps, but he uses a simple e-reader to keep up with his weekly book club, mirroring his work style of blending traditional approaches with selective technological aids. His evening walks along the harbor serve as both a personal retreat and a reminder of the balance he maintains between embracing technology and valuing time-tested routines.",
-    "current_occupation_title": "Registered Nurse",
-    "years_of_experience": 45,
-    "current_organization_name": "Meadowbrook Family Health Center",
-    "current_organization_location": "Harborview, Massachusetts",
+    "hobbies_narrative": "Weekend birdwatching in local parks, Weekly chess nights with spouse, Regular visits to local antique shops, Meditation and journaling at home",
+    "annual_income": 183360,
+    "technological_skill_level": "At Cedar Valley Family Health Clinic, the psychiatrist navigates the EHR with seasoned efficiency, swiftly accessing patient histories and leveraging templates to ensure thorough documentation while prioritizing empathy and patient satisfaction. Despite this, the transition to new telehealth interfaces has been a source of frustration, often requiring assistance from tech-savvy colleagues to resolve unexpected glitches. In personal life, this clinician's methodical nature is reflected in a preference for traditional note-taking during meditation and a reliance on digital platforms to organize and schedule weekend birdwatching outings. The integration of technology in both professional and personal spheres highlights a balance of adaptability and reliance on familiar workflows to maintain a high standard of care and satisfaction.",
+    "current_occupation_title": "Psychiatrist",
+    "years_of_experience": 19,
+    "current_organization_name": "Cedar Valley Family Health Clinic",
+    "current_organization_location": "Riverton, Connecticut",
     "clinical_priorities": [
-      "EHR documentation",
       "improved clinical physical-behavioral outcomes",
+      "EHR documentation",
       "empathy",
       "maximizing patient satisfaction",
-      "research"
+      "improved patient-provider relationships"
     ],
-    "personality_traits": "Agreeable, assertive, conscientious, and steady under pressure, with a strong practical orientation toward team-based care.",
-    "va_modulator": "vague/ambiguous",
-    "cr_modulator": "contextually_irrelevant"
-  },
-  {
-    "id": "50ade9ec-a864-4839-a61f-02cad64660f5",
-    "full_name": "Ethan Caldwell",
-    "age": 27,
-    "sex": "male",
-    "race_ethnicity": "White",
-    "place_of_birth": "Riverbend, Virginia",
-    "support_system": [
-      "grandmother_1",
-      "father_1",
-      "sister_1",
-      "work colleague_1",
-      "cousin_1"
-    ],
-    "hobbies_narrative": "Volunteering at local health fairs, Regular Sunday family brunches, Weekly trivia night with colleagues, Exploring Chesapeake Bay seafood spots, Evening jigsaw puzzles and tea",
-    "annual_income": 116445,
-    "technological_skill_level": "At Pine Valley Family Health Center, the 27-year-old registered nurse adeptly navigates the electronic health record system, efficiently using templates and shortcuts to streamline routine documentation and focus on nurturing patient-provider relationships. However, when faced with unexpected errors or new software updates, he sometimes hesitates, preferring the familiarity of established workflows and occasionally seeking assistance from tech-savvy colleagues. Outside of work, his cautious yet methodical approach to technology manifests in his personal life; he enjoys using apps to discover new Chesapeake Bay seafood spots but relies on traditional jigsaw puzzles and tea for evening relaxation. Despite occasional technical hiccups, his dedication to empathy and research shines through as he continually adapts to maximize revenue and reduce cognitive load while maintaining a compassionate touch.",
-    "current_occupation_title": "Registered Nurse",
-    "years_of_experience": 4,
-    "current_organization_name": "Pine Valley Family Health Center",
-    "current_organization_location": "Bayfield, Maryland",
-    "clinical_priorities": [
-      "improved patient-provider relationships",
-      "reduced cognitive load",
-      "maximizing revenue",
-      "empathy",
-      "research"
-    ],
-    "personality_traits": "Agreeable, assertive, conscientious, and steady under pressure, with a strong practical orientation toward team-based care.",
+    "personality_traits": "Thoughtful, observant, and measured, balancing diagnostic rigor with interpersonal sensitivity.",
     "va_modulator": "clear/detailed",
     "cr_modulator": "contextually_relevant"
+  },
+  {
+    "id": "d7a1cb29-afc5-4941-986f-10e3d6656590",
+    "full_name": "Maya Redfeather",
+    "age": 68,
+    "sex": "female",
+    "race_ethnicity": "American Indian or Alaska Native",
+    "place_of_birth": "Riverbend, Illinois",
+    "support_system": [
+      "brother_1",
+      "mother_1",
+      "father_1",
+      "friend_1",
+      "mentor_1",
+      "non-married partner_1",
+      "friend_2",
+      "non-married partner_2"
+    ],
+    "hobbies_narrative": "Weekly book club with friends, Volunteer at local community garden, Evening walks along Riverton River, Listening to classic jazz records, Weekend phone calls with brother",
+    "annual_income": 79660,
+    "technological_skill_level": "At Greenfield Family Health Center, the 68-year-old behavioral health counselor skillfully navigates the electronic health record (EHR) system, leveraging templates for efficient documentation but occasionally hesitates when new interfaces are introduced, preferring familiar workflows. Her dedication to evidence-based decision-making is evident as she meticulously reviews digital charts to ensure the best outcomes while sometimes relying on colleagues to troubleshoot unexpected technical glitches. In her personal life, she enjoys the simplicity of listening to her classic jazz records on a vintage turntable and prefers a friendly phone call with her brother over newer communication apps. Whether at work or home, she balances caution with efficiency, using technology as a tool to enhance, rather than replace, meaningful interactions.",
+    "current_occupation_title": "Behavioral Health Counselor",
+    "years_of_experience": 20,
+    "current_organization_name": "Greenfield Family Health Center",
+    "current_organization_location": "Riverton, Nebraska",
+    "clinical_priorities": [
+      "evidence-based medical decision making",
+      "reduced cognitive load",
+      "maximizing patient satisfaction",
+      "improved clinical physical-behavioral outcomes",
+      "shared-decision making"
+    ],
+    "personality_traits": "Empathic, reflective, and emotionally steady, with strong listening and rapport-building tendencies.",
+    "va_modulator": "vague/ambiguous",
+    "cr_modulator": "contextually_irrelevant"
   }
 ]

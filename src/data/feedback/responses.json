@@ -1,0 +1,32 @@
+{
+    "5e51754b-6e4e-46fc-a890-135817fd9863": {
+        "question_1_answer": "The wireframe of the PI application presents a clean and user-friendly interface, which is promising for both patients and staff. The organization of forms by status and visit date is clear, making it straightforward to track what's completed and what's pending. However, the reliance on dropdown menus for demographics could lead to data entry errors if not handled carefully. Additionally, the lack of visual cues or highlights for urgent tasks might make it difficult to prioritize forms efficiently. Overall, while functional, it could benefit from enhancements in navigation and prioritization.",
+        "persona_use": "I used Layla's clear and detailed communication style to provide specific feedback on the interface, focusing on both the strengths and potential weaknesses. I ensured the response was contextually relevant, addressing the question directly with observations pertinent to a clinician's workflow.",
+        "controls": {
+            "sentiment": "negative",
+            "word_range": [
+                55,
+                90
+            ],
+            "opening_mode": "start with a positive first impression",
+            "structure_mode": "three short paragraphs",
+            "feedback_detail": "clear/detailed",
+            "contextual_relevance": "contextually_relevant"
+        }
+    },
+    "d7a1cb29-afc5-4941-986f-10e3d6656590": {
+        "question_1_answer": "I sometimes feel a little overwhelmed by the constant updates and changes in healthcare technology. While it's meant to streamline our work, it often feels like it adds more steps rather than simplifying.\n\nBalancing new tech with patient care is tricky, and I find it challenging to navigate without losing the personal touch that's essential to our practice.",
+        "persona_use": "I focused on Maya's mixed sentiment towards technology, her preference for familiar workflows, and her empathic nature to shape a response that reflects concern about technology's impact on patient interaction. The response is impressionistic and vaguely addresses technology without directly discussing specifics, aligning with her contextually irrelevant trait.",
+        "controls": {
+            "sentiment": "mixed",
+            "word_range": [
+                35,
+                60
+            ],
+            "opening_mode": "start with a concern or hesitation",
+            "structure_mode": "two very short paragraphs",
+            "feedback_detail": "vague/ambiguous",
+            "contextual_relevance": "contextually_irrelevant"
+        }
+    }
+}

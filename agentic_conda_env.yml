@@ -1,4 +1,4 @@
-name: sfgd
+name: test_sdg
 channels:
   - defaults
   - anaconda
@@ -6,26 +6,18 @@ channels:
 dependencies:
   - python=3.13
   - pandas
-  - numpy
-  - seaborn
-  - matplotlib
-  - psutil
-  - xlsxwriter
   - scikit-learn
-  - pytorch
-  - torchvision
-  - tensorboard
-  - transformers
   - pydantic
   - pip
+  - ipython
   - pip:
     - langchain
     - langgraph
-    - langchain-chroma
     - langchain-core
     - langchain-community
     - langchain-openai
     - langchain-huggingface
     - langchain_text_splitters
     - pypdf
-    - dotenv
+    - python-dotenv
+    - sentence-transformers
