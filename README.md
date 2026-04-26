@@ -1,4 +1,7 @@
 # Synthetic Feedback Generation Pipeline
+
+![Pipeline Diagram](pipeline_workflow.png)
+
 > This pipeline leverages LLMs and persona-based prompting to generate diverse feedback datasets, based on wireframes and short text narratives of applications/software. The current implementation of this pipeline is tightly coupled with Clinician personas and a prototype Patient Intake application, but can be modified to fit any software feedback scenario.
 
 ## Installation
